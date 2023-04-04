@@ -10,11 +10,11 @@ spec:
   project: default
   source:
     path: apps/bgd/overlays/bgdk
-    repoURL: https://github.com/redhat-developer-demos/openshift-gitops-examples
+    repoURL: https://github.com/sujitpatra89/openshift-gitops-examples.git
     targetRevision: main
   syncPolicy:
     automated:
       prune: true
-      selfHeal: false
+      selfHeal: true
     syncOptions:
     - CreateNamespace=true
